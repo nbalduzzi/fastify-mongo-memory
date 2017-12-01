@@ -14,10 +14,10 @@ tap.test('fastify.mongoMemory should exist', test => {
 
   fastify.ready(err => {
     test.error(err)
-    test.ok(fastify.mongoMemory)
+    test.ok(fastify.mongo)
 
-    fastify.mongoMemory.db.close()
-    fastify.mongoMemory.instance.stop(error => {
+    fastify.mongo.close()
+    fastify.mongoInstance.stop(error => {
       test.error(error)
       test.end()
     })

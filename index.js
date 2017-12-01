@@ -16,7 +16,8 @@ const fastifyMongoMemory = (fastify, { port, dbname }, next) => {
 
         mongodb.connect(uri, (error, db) => {
           if (!error) {
-            fastify.decorate('mongoMemory', { db, instance })
+            fastify.decorate('mongo', db)
+            fastify.decorate('mongoInstance', instance)
             next()
           } else {
             next(new Error(error))
