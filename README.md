@@ -15,8 +15,9 @@ npm install fastify-mongo-memory --save
 fastify.register(require('fastify-mongo-memory'), options, err => console.error(err))
 
 fastify.get('/', (request, reply) => {
-  console.log(fastify.mongoMemory) // Mongo in memory DB instance
-})
+  console.log(fastify.mongo) // Mongo in memory DB
+  console.log(fastify.mongoInstance) // Mongo in memory DB instance
+}) 
 ```
 
 ## Options
