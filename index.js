@@ -6,7 +6,7 @@ const mongodb = require('mongodb')
 
 const fastifyMongoMemory = (fastify, { port, dbname }, next) => {
   try {
-    const instance = new MongoInMemory(port)
+    const instance = new MongoInMemory(8000 || port)
 
     instance.start(error => {
       if (error) {
