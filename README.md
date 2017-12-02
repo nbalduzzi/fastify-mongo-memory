@@ -16,7 +16,6 @@ fastify.register(require('fastify-mongo-memory'), options, err => console.error(
 
 fastify.get('/', (request, reply) => {
   console.log(fastify.mongo) // Mongo in memory DB
-  console.log(fastify.mongoInstance) // Mongo in memory DB instance
 }) 
 ```
 
