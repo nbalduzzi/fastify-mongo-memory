@@ -9,13 +9,13 @@ function fastifyMongoMemory (fastify, opts, next) {
 
   server.start(function (error) {
     if (error) {
-      next(new Error(error))
+      next(error)
     } else {
       const uri = server.getMongouri(opts.dbname || 'test')
 
       mongodb.connect(uri, function (error, db) {
         if (error) {
-          next(new Error(error))
+          next(error)
         } else {
           fastify.decorate('mongo', db)
           next()
@@ -27,9 +27,9 @@ function fastifyMongoMemory (fastify, opts, next) {
   fastify.addHook('onClose', function (instance, done) {
     server.stop(function (error) {
       if (error) {
-        done(new Error(error))
+        done(error)
       } else {
-        fastify.mongo.close()
+        fastify.mongo.close(true, done)
         done()
       }
     })
