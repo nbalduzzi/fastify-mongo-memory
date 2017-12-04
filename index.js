@@ -17,7 +17,7 @@ function fastifyMongoMemory (fastify, opts, next) {
         if (error) {
           next(error)
         } else {
-          fastify.decorate('mongo', { db })
+          fastify.decorate('mongo', { db, ObjectId: mongodb.ObjectID })
           next()
         }
       })
