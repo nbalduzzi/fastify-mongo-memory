@@ -17,7 +17,7 @@ function fastifyMongoMemory (fastify, opts, next) {
         if (error) {
           next(error)
         } else {
-          fastify.decorate('mongo', db)
+          fastify.decorate('mongo', { db })
           next()
         }
       })
@@ -29,7 +29,7 @@ function fastifyMongoMemory (fastify, opts, next) {
       if (error) {
         done(error)
       } else {
-        fastify.mongo.close(done)
+        fastify.mongo.db.close(done)
         done()
       }
     })
