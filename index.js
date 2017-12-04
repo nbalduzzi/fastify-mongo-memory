@@ -29,7 +29,7 @@ function fastifyMongoMemory (fastify, opts, next) {
       if (error) {
         done(error)
       } else {
-        fastify.mongo.close(true, done)
+        fastify.mongo.close(done)
         done()
       }
     })
