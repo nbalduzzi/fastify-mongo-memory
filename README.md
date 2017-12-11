@@ -30,10 +30,6 @@ Mongo in memory DB configuration JSON object.
 }
 ```
 
-## Version
-
-v1.0.0
-
 ## Author
 
 [Nicolás Balduzzi](nico.balduzzi@gmail.com)
