@@ -1,6 +1,6 @@
 {
   "name": "fastify-mongo-memory",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Fastify mongo in memory plugin",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/chapuletta/fastify-mongo-memory#readme",
   "dependencies": {
-    "fastify-plugin": "^0.1.1",
+    "fastify-plugin": "^0.2.2",
     "mongo-in-memory": "0.0.5",
     "mongodb": "^2.2.33"
   },
