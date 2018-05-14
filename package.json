@@ -1,6 +1,6 @@
 {
   "name": "fastify-mongo-memory",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Fastify mongo in memory plugin",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chapuletta/fastify-mongo-memory.git"
+    "url": "git+https://github.com/nbalduzzi/fastify-mongo-memory.git"
   },
   "keywords": [
     "Fastify",
     "MongoDB",
     "Test"
   ],
-  "author": "Chapuletta - nico.balduzzi@gmail.com",
+  "author": "Nicolas Balduzzi",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chapuletta/fastify-mongo-memory/issues"
+    "url": "https://github.com/nbalduzzi/fastify-mongo-memory/issues"
   },
-  "homepage": "https://github.com/chapuletta/fastify-mongo-memory#readme",
+  "homepage": "https://github.com/nbalduzzi/fastify-mongo-memory#readme",
   "dependencies": {
     "fastify-plugin": "^1.0.1",
     "mongo-in-memory": "0.0.5",
