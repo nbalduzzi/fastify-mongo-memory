@@ -7,13 +7,13 @@
 
 ## Installation
 
-```
+```bash
 npm install fastify-mongo-memory --save
 ```
 
 ## Usage
 
-```
+```javascript
 fastify.register(require('fastify-mongo-memory'), options, err => console.error(err))
 
 fastify.get('/', (request, reply) => {
@@ -25,7 +25,7 @@ fastify.get('/', (request, reply) => {
 
 Mongo in memory DB configuration JSON object.
 
-```
+```json
 {
   port: 5000 // 8000 default
   dbname: 'database-test-name'
