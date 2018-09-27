@@ -3,6 +3,8 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![Build Status](https://travis-ci.org/nbalduzzi/fastify-mongo-memory.svg?branch=master)](https://travis-ci.org/nbalduzzi/fastify-mongo-memory)
 
+[![NPM](https://nodei.co/npm/fastify-mongo-memory.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/fastify-mongo-memory/)
+
 ## Installation
 
 ```
@@ -16,7 +18,7 @@ fastify.register(require('fastify-mongo-memory'), options, err => console.error(
 
 fastify.get('/', (request, reply) => {
   console.log(fastify.mongo) // Mongo in memory DB
-}) 
+})
 ```
 
 ## Options
