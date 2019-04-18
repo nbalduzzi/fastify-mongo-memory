@@ -11,14 +11,16 @@
 npm install fastify-mongo-memory --save
 ```
 
+> Note: for no dependency vulnerability you need to execute the `npm install --no-save` command for no update the `package-lock.json` deep dependencies.
+
 ## Usage
 
 ```javascript
-fastify.register(require('fastify-mongo-memory'), options, err => console.error(err))
+fastify.register(require('fastify-mongo-memory'), options, err => console.error(err));
 
 fastify.get('/', (request, reply) => {
-  console.log(fastify.mongo) // Mongo in memory DB
-})
+    console.log(fastify.mongo); // Mongo in memory DB
+});
 ```
 
 ## Options
