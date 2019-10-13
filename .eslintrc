@@ -8,11 +8,13 @@
     "ecmaVersion": 8,
     "sourceType": "module",
     "ecmaFeatures": {
-      "experimentalObjectRestSpread": true
+      "parserOptions.ecmaVersion": true
     }
   },
   "rules": {
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-console": ["error", {
+      "allow": ["warn", "error"]
+    }],
     "semi": [2, "never"]
   }
 }
