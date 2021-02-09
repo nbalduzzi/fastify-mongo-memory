@@ -53,8 +53,8 @@
     "fastify": "^3.11.0",
     "husky": "^5.0.9",
     "lint-staged": "^10.5.4",
-    "tap": "^14.11.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "tap": "^14.11.0"
   },
   "release": {
     "branches": [
