@@ -29,8 +29,8 @@ Mongo in memory DB configuration JSON object.
 
 ```json
 {
-  port: 5000 // 8000 default
-  dbname: 'database-test-name'
+  "port": 5000 /* 8000 by default */
+  "dbname": "database-test-name"
 }
 ```
 
